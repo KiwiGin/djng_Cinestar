@@ -1,0 +1,25 @@
+******Tener instalado las librerias******
+
+pip install django
+pip install djangorestframework
+pip install mysqlclient
+
+******Para correr el servidor******
+
+python manage.py runserver
+
+******Especificaciones******
+Se puede entrar tanto a la api como a la web de cinestar
+
+Rutas de api para ver los datos en json:
+
+http://127.0.0.1:8000/cinestar/bayes/cines-api/
+http://127.0.0.1:8000/cinestar/bayes/cines-api/1  (o en vez de 1 ponga otro numero)
+http://127.0.0.1:8000/cinestar/bayes/peliculas-api/
+http://127.0.0.1:8000/cinestar/bayes/peliculas-api/1  (o en vez de 1 ponga otro numero)
+http://127.0.0.1:8000/cinestar/bayes/cinetarifa-api/1/  (o en vez de 1 ponga otro numero)
+http://127.0.0.1:8000/cinestar/bayes/cinepelicula-api/1/ (o en vez de 1 ponga otro numero)
+
+Ruta para la web:
+
+http://127.0.0.1:8000/cinestar/bayes/home/

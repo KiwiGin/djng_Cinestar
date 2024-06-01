@@ -1,0 +1,19 @@
+﻿{% extends 'index.html' %}
+{% block contenido_interno %}
+{% load static %}
+<h1>Nuestros Cines</h1><br />
+{% for cine in cines %}
+<div class="contenido-cine">
+	<img src="{% static 'img/cine/' %}{{ cine.id }}.1.jpg" width="227" height="170" />
+	<div class="datos-cine">
+		<h4>{{ cine.razonsocial }}</h4><br />
+		<span>{{ cine.direccion }} - {{ cine.distrito }}<br /><br />Teléfono: {{ cine.telefonos }} anexo
+			865</span>
+	</div>
+	<br />
+	<a href="{% url 'cine' cine.id %}">
+		<img src="{% static 'img/varios/ico-info2.png' %}" width="150" height="40" />
+	</a>
+</div>
+{% endfor %}
+{% endblock %}
